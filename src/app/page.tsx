@@ -11,7 +11,8 @@ const Page = () => {
   const [tables, setTables] = useState<{ tableId: string; capacity: number }[]>(
     []
   );
-  const url="http://localhost:4000/api"
+  // const url="http://localhost:4000/api"
+  const url="https://tablebookingappbackend.onrender.com/api"
 
   const fetchTables = async () => {
     const res = await axios.get(`${url}/tables`);
