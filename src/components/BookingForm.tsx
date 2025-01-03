@@ -44,7 +44,7 @@ const BookingForm = ({
     }
 
     try {
-      const response = await axios.post(`${url}/api/bookings`, {
+      const response = await axios.post(`${url}/bookings`, {
         tableId: selectedTable,
         date: bookingDate,
         userId: customerName,
